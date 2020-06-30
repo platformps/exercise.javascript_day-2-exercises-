@@ -11,12 +11,10 @@ let doneAsking = false;
 while(!doneAsking) {
   let userIndex = prompt("Give me and index");
   let userValue = prompt("Give me a value");
-  if(userIndex < arr.length)
+  if(userIndex < arr.length && userIndex >= 0)
     arr[userIndex] = userValue;
   else
     doneAsking = true;
 }
 
 alert("Goodbye! We could not assign the last value you provided. Index out of range!");
-
-  
