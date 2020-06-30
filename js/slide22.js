@@ -1,5 +1,8 @@
-let userInput;
+let userInput = window.prompt("Please enter an integer:");
 while(true) {
-    userInput = window.prompt("Enter a number between 0 and 100");
-    if(userInput > 0 && userInput < 100) break;
+    if(userInput > 0 && userInput < 100) {
+        console.log(Math.pow(parseInt(userInput), 2));
+        break;
+    };
+    userInput = window.prompt("Please re-enter:");
 }
