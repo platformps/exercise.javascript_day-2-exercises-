@@ -9,9 +9,6 @@ for(var i = 0; i < myData.length; i++){
 }
 
 //Have user overwrite an index
-for(var i = 0; i < myData.length; i++){
-    console.log(myData[i]);    
-}
 do{
     var index = prompt("Enter cell index. Range of 0 >= n < 10")
     //Break loop if index is not in range
