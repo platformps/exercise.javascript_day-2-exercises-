@@ -8,11 +8,14 @@ console.log(mydata);
 
 do {
     userInput = prompt("Enter the index number");
-    if (userInput >= 0 && userInput < 10) {
-        userValue = prompt("Enter the value for index");
-        mydata[userInput] = userValue;
-        console.log("Modified Array");
-        console.log(mydata);
+    if (userInput < 0 || userInput >= 10) {
+        console.log("invalid range");
         break;
     }
-} while (userInput < 0 || userInput >= 10);
+    userValue = prompt("Enter the value for index");
+    mydata[userInput] = userValue;
+    console.log("Modified Array");
+    console.log(mydata);
+
+
+} while (userInput >= 0 && userInput < 10);
