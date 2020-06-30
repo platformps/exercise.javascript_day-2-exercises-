@@ -1,7 +1,4 @@
 let firstArray=new Array(10);
-let position=prompt("Enter a position in the index from 0-9")
-let choice=prompt("Enter the number you wan to change the value in this index")
-
 //fills all values in the array with 1's
 for(let i=0;i<10;i++)
 {
@@ -16,4 +13,13 @@ console.log(firstArray);
 // in a loop that keeps going until its not in range exit the javascript
 // if 
 
-while()
+let position=prompt("input index")
+
+
+while(position>0 && position<10){
+    let choice=prompt("input value");
+    firstArray[position]=parseInt(choice);
+    position=prompt("input index")
+}
+console.log(firstArray);
+console.log("index out of range!. goodbye :(")
