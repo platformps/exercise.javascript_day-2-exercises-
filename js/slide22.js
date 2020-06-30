@@ -1,6 +1,5 @@
-
+var num = 0;
 do{
-    var num = 0;
     num = prompt("Enter an integer between 1 and 100");
 } while(!(num > 0 && num < 100));
 
