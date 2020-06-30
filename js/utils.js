@@ -19,8 +19,6 @@ function getAllMethodsOfObejct(obj) {
     return result;
   }
 
-
-
 function loadHtml(elementId, fileName) {
     $(elementId).html('<object data="'+ fileName + '">');
 };
