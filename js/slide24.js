@@ -12,7 +12,7 @@ do {
         if ( event.which === 13 ) { //
             if (i < 0 || i > 10) {
         console.log("Your number is outside the range. Goodbye!");
-        //break;
+        break;
         } 
     if (i<=10) {
         var v = console.log("What would you like the new value to be?");
@@ -25,7 +25,7 @@ do {
     myData.splice(i,i,v);
     console.log(myData.join(" ").toString());
 //    }
-        //
+        }//
       }  //
 
 } while (i < 0 || i > 10);
