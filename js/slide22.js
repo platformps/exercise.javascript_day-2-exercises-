@@ -7,11 +7,12 @@
 // while (condition);
 
 
-
-let userInput;
-do{
-  userInput = prompt("Enter a number between 0 and 100:");
-} 
-while( isNaN(userInput) || userInput < 0 || userInput > 100 );
-
-console.log(userInput);
+let userInput = "";
+while (userInput = prompt ("Enter a number between 1 and 100:")){
+  if (isNaN(userInput) || userInput < 0 || userInput > 100){
+    alert ("Re-enter number between 1 and 100:");
+  } else {
+    console.log(userInput);
+    break;
+  }
+}
