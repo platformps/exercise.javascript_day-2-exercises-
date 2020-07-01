@@ -14,7 +14,7 @@ for(let i=0; i<myData.length; i++){
     i=prompt("Enter cell index")
     {
         v=prompt("Enter new value")
-        if (i>0 && i<10)
+        if (i>=0 && i<10)
         {
             myData[i] = v;
             console.log(myData);
