@@ -1,7 +1,11 @@
 body {
-    background-color: navy;
+    background-color: lightslategray;
+    color: white;
 }
 
+a {
+    color: white;
+}
 
 object {
     height: 100vh;
