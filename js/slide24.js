@@ -1,15 +1,16 @@
-var myData = new Array(10); //create an array
-userInput = prompt("Enter cell index i = v");
-function printArray(myData); {
-for(var i = 1; i < 11; i ); { //using a for loop
-    console.log(myData [i]);
+var myData = [i];
+myData.length = 10; 
+for(var i = 0; i <= myData.length; i++) {
+    myData[i] = 1;
 }
-}
-var v = new myData;
-while( 0 < i < 10);{ 
-    do console.log(myData [v]);
-}
- if(!0 < i < 10 == userInput); {
-    console.log(myData[v]);
-       break;
-}
+console.log(myData);
+
+var i = window.prompt('Input the cell index to change:');
+do {
+    var v = window.prompt('Enter new value:');
+    myData[i] = v;
+    console.log(myData);
+    i = window.prompt('Enter the cell index to change:');
+
+} while (i < 10 && i >= 0);
+console.log('Index out of Range. Exit');
